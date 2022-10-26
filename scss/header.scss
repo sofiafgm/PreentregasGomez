@@ -1,0 +1,35 @@
+.header {
+    background-color: #000;
+    margin: 0;
+  
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.55);
+  
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  
+    .logo {
+      width: 32px;
+      height: 32px;
+      opacity: 0.8;
+      transition: all ease-in-out 1sec;
+  
+      @include for-breakpoint(md) {
+        width: 64px;
+        height: 64px;
+        padding: 5px;
+      }
+  
+      @include for-breakpoint(md) {
+        width: 64px;
+        height: 64px;
+        padding: 5px;
+      }
+    }
+  
+    .dropdown-menu {
+      font-family: 'Shadows Into Light', cursive;
+    }
+  }

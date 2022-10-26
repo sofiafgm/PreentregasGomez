@@ -1,0 +1,119 @@
+.header {
+  background-color: #000;
+  margin: 0; }
+  .header .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.55); }
+    .header .navbar-dark .navbar-nav .nav-link:hover {
+      color: white; }
+  .header .logo {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    transition: all ease-in-out 1sec; }
+    @media screen and (min-width: 768px) {
+      .header .logo {
+        width: 64px;
+        height: 64px;
+        padding: 5px; } }
+    @media screen and (min-width: 768px) {
+      .header .logo {
+        width: 64px;
+        height: 64px;
+        padding: 5px; } }
+  .header .dropdown-menu {
+    font-family: 'Shadows Into Light', cursive; }
+
+.footer {
+  margin: 0;
+  margin-top: auto; }
+
+.aside, .img-aside, .content-aside {
+  width: 100%; }
+
+.img-aside {
+  object-fit: cover;
+  height: 200px; }
+  @media screen and (min-width: 768px) {
+    .img-aside {
+      width: 50%;
+      height: 700px; } }
+
+@media screen and (min-width: 768px) {
+  .content-aside {
+    width: 50%; } }
+
+.content-aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+  .content-aside ul li {
+    padding: 10px; }
+    .content-aside ul li a {
+      color: white;
+      text-decoration: none; }
+
+.img-about {
+  height: 200px;
+  object-fit: cover; }
+  @media screen and (min-width: 768px) {
+    .img-about {
+      height: 600px;
+      padding: 25px; } }
+
+.img-min-gallery {
+  aspect-ratio: 1/1;
+  width: 100%; }
+
+.product {
+  position: relative; }
+  .product .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-flow: column nowrap;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    padding: 20px; }
+    .product .overlay:hover {
+      opacity: 1; }
+    .product .overlay .title {
+      font-size: 16px;
+      font-weight: bolder; }
+    .product .overlay .price {
+      font-size: 14px; }
+    .product .overlay .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto; }
+      .product .overlay .buttons .button {
+        border-radius: 100%;
+        font-size: 10px;
+        color: white;
+        background: darkgrey;
+        padding: 3px;
+        width: 20px;
+        height: 20px; }
+
+.shopping-details {
+  width: 100%; }
+  .shopping-details td {
+    border-color: white;
+    border-width: 1px; }
+
+body {
+  margin: 0;
+  background-color: #333333;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.title {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder; }
